@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقييم المنتج</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        direction: ltr;
+        /* background-color: #f4f4f4; */
+        background-image: url('snapedit_1734709098669.jpg');
+        background-size: cover; /* يجعل الصورة تغطي كامل الصفحة */
+        background-position: center; /* لضبط الصورة في المنتصف */
+        background-attachment: fixed; /* يجعل الخلفية ثابتة عند التمرير */
+        margin: 0; /* إزالة الهامش الافتراضي */
+        font-family: Arial, sans-serif; /* تعيين نوع الخط */
+    
+    }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: #f40b0b; */
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            /* background-color: white; */
+            padding: 20px;
+            border-radius: 10px;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .star {
+            font-size: 30px;
+            color: #ccc;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .star.selected {
+            color: gold;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .rating-value p {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+        <header>
+         <div class="logo">MAINTENANCE</div>
+         <nav>
+         <a href="Customer reviews.html">Customer reviews</a>
+           <a href="Home.html">Home</a>
+           <a href="servias.html">servias</a>
+           <a href="aabout.html">about</a>
+           <a href="Contact Us.html">Contact</a>
+           <a href="booking.html">booking</a>
+           <a href="moff.html">offer</a>
+           <a href="Evaluering.html">Evaluering</a>
+         <nav>
+        </header>
+
+        
+ 
+
+
+
+
+    <div class="container">
+        <h1>Product Rating</h1>
+        <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <div class="rating-value">
+            <p>Evaluation: <span id="rating">0</span> of 5</p>
+        </div>
+
+        <textarea id="review" placeholder="" rows="4" cols="50"></textarea>
+        <br>
+        <button onclick="submitReview()">إرسال</button>
+    </div>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+        const ratingDisplay = document.getElementById('rating');
+        let currentRating = 0;
+
+        // إضافة تأثير عند الضغط على النجوم
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                currentRating = star.getAttribute('data-value');
+                updateStars();
+            });
+        });
+
+        // تحديث حالة النجوم بناءً على التقييم
+        function updateStars() {
+            stars.forEach(star => {
+                if (star.getAttribute('data-value') <= currentRating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+            ratingDisplay.textContent = currentRating;
+        }
+
+        // إرسال التقييم والرأي
+        function submitReview() {
+            const reviewText = document.getElementById('review').value;
+            
+            if (currentRating === 0) {
+                alert('يرجى تحديد التقييم أولاً');
+                return;
+            }
+
+            if (reviewText === '') {
+                alert('يرجى إضافة رأيك');
+                return;
+            }
+
+            // هنا يمكن إرسال التقييم والرأي إلى الخادم أو حفظه في قاعدة بيانات
+            alert(`تم إرسال التقييم: ${currentRating} من 5 \nرأيك: ${reviewText}`);
+        }
+    </script>
+</body>
+</html>

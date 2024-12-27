@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - مركز صيانة السيارات</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        /* background-color: #9Ab6B2 ; */
+        background-image: url("snapedit_1734709098669.jpg");
+        background-size: cover; /* يجعل الصورة تغطي كامل الصفحة */
+        background-position: center; /* لضبط الصورة في المنتصف */
+        background-attachment: fixed; /* يجعل الخلفية ثابتة عند التمرير */
+        margin: 0; /* إزالة الهامش الافتراضي */
+        font-family: Arial, sans-serif; /* تعيين نوع الخط */
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #f40b0b; */
+        color: white;
+        padding: 10px 20px;
+      }
+
+      header nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-size: 16px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 20px;
+        text-align: center;
+        /* background-color:  #D9EAFD; */
+        height: 100vh;
+      }
+
+      h1 {
+        color: #0d0303;
+        font-size: 40px;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.6;
+        font-size: 30;
+      }
+
+      .service-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .service-card {
+        /* background-color:  #BCCCDC; */
+        border-radius: 8px;
+        /* box-shadow: 0 4px 8px rgba(212, 37, 37, 0.1); */
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .service-card p {
+        color: rgb(239, 233, 233) !important;
+        text-decoration: double;
+      }
+
+      .service-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .service-card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+
+      .service-card h3 {
+        margin: 10px 0;
+        color: #f2efef;
+      }
+
+      .service-card p {
+        font-size: 14px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MAINTENANCE</div>
+      <nav>
+        <a href="Customer reviews.html">Customer reviews</a>
+        <a href="Home.html">Home</a>
+        <a href="servias.html">servias</a>
+        <a href="aabout.html">about</a>
+        <a href="Contact Us.html">Contact</a>
+        <a href="booking.html">booking</a>
+        <a href="moff.html">offer</a>
+        <a href="Evaluering.html">Evaluering</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>service</h1>
+      <h4>
+        We offer a variety of maintenance services to ensure your vehicle is
+        safe and performing at its best.
+      </h4>
+
+      <div class="service-list">
+        <div class="service-card">
+          <img
+            src="WhatsApp Image 2024-12-23 at 21.24.28_e673c524.jpg"
+            alt="Oil Change"
+            style="width: 260px; height: 220px"
+          />
+          <h3>Oil change</h3>
+          <p>
+            Change engine oil with high quality oils to improve performance.
+          </p>
+        </div>
+        <div class="service-card">
+          <img
+            src="WhatsApp Image 2024-12-23 at 21.24.29_8a0bfdfd.jpg"
+            alt="Tire Alignment"
+            style="width: 260px; height: 220px"
+          />
+          <h3>Tire adjustment</h3>
+          <p>
+            Adjust angles to improve vehicle stability and reduce fuel
+            consumption.
+          </p>
+        </div>
+        <div class="service-card">
+          <img
+            src="WhatsApp Image 2024-12-23 at 21.24.29_93e53fa2.jpg"
+            alt="Battery Check"
+            style="width: 260px; height: 220px"
+          />
+          <h3>Battery check</h3>
+          <p>
+            Check and replace your battery to ensure your vehicle runs
+            efficiently.
+          </p>
+        </div>
+        <div class="service-card">
+          <img
+            src="WhatsApp Image 2024-12-23 at 21.24.29_052731f6.jpg"
+            alt="Engine Diagnostics"
+            style="width: 260px; height: 220px"
+          />
+          <h3>Engine Diagnosis</h3>
+          <p>
+            Using the latest technology to quickly and accurately identify
+            faults.
+          </p>
+        </div>
+        <div class="service-card">
+          <img
+            src="WhatsApp Image 2024-12-23 at 21.24.30_3a934e33.jpg"
+            alt="Brake Repair"
+            style="width: 260px; height: 220px"
+          />
+          <h3>Brake maintenance</h3>
+          <p>Check and replace brakes to ensure driving safety</p>
+        </div>
+        <div class="service-card">
+          <img
+            src="WhatsApp Image 2024-12-23 at 21.24.30_37bc79d2.jpg"
+            alt="Air Conditioning"
+            style="width: 260px; height: 220px"
+          />
+          <h3>Air conditioning maintenance</h3>
+          <p>
+            Check and maintain your air conditioning system for best
+            performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

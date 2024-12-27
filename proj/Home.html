@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - ECU Service Center</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        direction: ltr;
+        background-image: url("snapedit_1734709098669.jpg");
+        background-size: cover; /* يجعل الصورة تغطي كامل الصفحة */
+        background-position: center; /* لضبط الصورة في المنتصف */
+        background-attachment: fixed; /* يجعل الخلفية ثابتة عند التمرير */
+        margin: 0; /* إزالة الهامش الافتراضي */
+      }
+      /* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+} */
+
+      /* .header {
+    background-color: #333;
+    padding: 10px 0;
+} */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #f40b0b; */
+        color: white;
+        padding: 10px 20px;
+      }
+
+      header nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-size: 16px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        background-color: #333;
+      }
+
+      .navbar ul li {
+        margin: 0 15px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      .navbar ul li a:hover {
+        color: #ff9800;
+      }
+
+      .welcome-section {
+        text-align: center;
+        padding: 20px;
+        /* background-color: #f4f4f4; */
+      }
+
+      .center-history,
+      .certifications,
+      .stats,
+      .gallery {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        /* background-color: #fff; */
+        /* border: 1px solid #ddd; */
+        border-radius: 5px;
+        color: rgb(249, 250, 251);
+      }
+      .stats p {
+        color: aliceblue;
+      }
+
+      .stats-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .gallery-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .gallery-container img {
+        width: 30%;
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MAINTENANCE</div>
+      <nav>
+        <a href="Customer reviews.html">Customer reviews</a>
+        <a href="Home.html">Home</a>
+        <a href="servias.html">servias</a>
+        <a href="aabout.html">about</a>
+        <a href="Contact Us.html">Contact</a>
+        <a href="booking.html">booking</a>
+        <a href="moff.html">offer</a>
+        <a href="Evaluering.html">Evaluering</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome-section">
+        <h1>Welcome to ECU Service Center</h1>
+        <p>Your one-stop solution for car maintenance and repair services.</p>
+      </section>
+
+      <section class="center-history">
+        <h2>About Our Center</h2>
+        <p>
+          Founded in <strong>2005</strong>, the Car Service Center has been
+          providing top-notch automotive services for over
+          <strong>19 years</strong>. Established by
+          <strong>Engineer Ahmed Saeed</strong>, our center combines expertise
+          and advanced technology to meet your car maintenance needs.
+        </p>
+      </section>
+
+      <section class="certifications">
+        <h2>Certifications and Achievements</h2>
+        <ul>
+          <li>ISO 9001 Certification for Quality Management (2010).</li>
+          <li>Best Automotive Service Center Award in 2020.</li>
+          <li>Partnership with major car manufacturers like Toyota and BMW.</li>
+        </ul>
+      </section>
+
+      <section class="stats">
+        <h2>Our Milestones</h2>
+        <div class="stats-container">
+          <div class="stat-item">
+            <h3>50,000+</h3>
+            <p>Cars Serviced</p>
+          </div>
+          <div class="stat-item">
+            <h3>10,000+</h3>
+            <p>Satisfied Customers</p>
+          </div>
+          <div class="stat-item">
+            <h3>19</h3>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Our Facilities</h2>
+        <p>Explore our state-of-the-art facilities and skilled workforce:</p>
+        <div class="gallery-container">
+          <img src="web3.jpg" alt="Garage View 1" />
+          <img src="web2.jpg" alt="Garage View 2" />
+          <img src="web.jpg" alt="Our Team" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Car Service Center. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
